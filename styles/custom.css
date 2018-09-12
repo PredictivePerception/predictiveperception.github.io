@@ -55,13 +55,13 @@ body {
 }
 
 .main-body {
-  width: 80%;
+
   border-color: #000000;
   display: block;
-  padding-bottom: .5em;
-  box-shadow: 4px 0 2px -2px rgba(0, 0, 0, .4);
+
+ 
   overflow: auto;
-  float: right;
+
 }
 
 .main-body-header-inline h2 {
@@ -74,7 +74,6 @@ body {
   margin-top: .5em;
   display: inline;
   float: left;
-  padding-left: 1em;
 }
 
 .main-body-header-inline {
@@ -84,44 +83,7 @@ body {
 
 #text {
   align-content: center;
-  width: 50%;
-  float: left;
-}
-
-.sidenav {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 8px;
-  text-decoration: none;
-  font-size: 1.7em;
-  align-content: center;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  font-size: 9em;
-  float: right;
-  margin-left: 2em;
-  margin-top: -.8em;
+  
 }
 
 #main {
@@ -154,37 +116,6 @@ h3 {
   font-size: 1.6em;
   font-family: "Josefin Sans", sans-serif;
   font-weight: inherit;
-}
-
-#clockdiv {
-  color: #fff;
-  font-family: sans-serif;
-  display: inline-block;
-  position: static;
-  font-weight: 700;
-  text-align: center;
-  font-size: 2vw;
-  float: right;
-  width: 50%;
-  align-content: center;
-}
-
-#clockdiv p {
-  color: #000080;
-}
-
-#clockdiv>div {
-  padding: .8vw;
-  border-radius: 6px;
-  display: inline-block;
-  background-color: #000080;
-    /*find new color or remove*/;
-}
-
-#clockdiv div>span {
-  padding: 1vw;
-  border-radius: 3px;
-  display: inline-block;
 }
 
 .smalltext {
