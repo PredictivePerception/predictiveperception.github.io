@@ -120,7 +120,7 @@ hr.style {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color:rgb(33, 150, 243)
 }
 
 input:checked + .slider:before {

@@ -24,9 +24,3 @@ function tempAlertFast()
 	window.setTimeout("fade();", 50);
 }
 
-function findPosition(){
-	var offsets = document.getElementsByClassName('slider').getBoundingClientRect();
-	var left = offsets.left;
-	console.log(left);
-	return left;
-	}
