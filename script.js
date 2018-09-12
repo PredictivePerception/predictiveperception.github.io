@@ -5,11 +5,10 @@ function fade(){
 }
 
 function tempAlert(){
- var pop = document.getElementsByClassName('popUp');
+  var pop = document.getElementsByClassName('popUp');
   var newStyles = document.createElement('style')
         document.head.append(newStyles);
         newStyles.innerHTML = ".popUp{visibility:visible}";
-
 	window.setTimeout("fade();", 500);
 }
 
