@@ -5,100 +5,53 @@
         <meta charset="utf-8">
             <link rel="icon" type="image/gif" href="images/favicon.png" sizes="16x16" />
             <link rel="stylesheet" href="styles/custom.css" />
+            <script type="text/javascript" src="script.js"></script>
             <link rel="stylesheet" media="only screen and (max-device-width: 800px)" href="styles/mobile.css" type="text/css"  />
         </head>
         <body>
             <center>
-                <div class="main-body animated bounceIn">
-                    <div id="main-body-header">
-                        <div class= "main-body-header-inline">
-                            <div class="mobileShow" onclick="openNav()"> 
-                    &#9776;
-                    </div>
-                            <div id="text">
-                                <a href="index.html">
-                                  <center>  <h2> Predictive Perception </h2> </center>
-                                </a>
-                            </div>
-                            
+                <div id="main-body-header">
+                    <div class= "main-body-header-inline">
+                        <div id="text">
+                            <a href="index.html">
+                                <center>
+                                    <h2> Predictive Perception </h2>
+                                </center>
+                                <h3>By: Henry Brown</h3>
+                            </a>
                         </div>
-                        <br/>
-                        <p></p>
                     </div>
+                    <br/>
                     <p></p>
-                    <hr class="style">
-                        <div class ="section-header">
-            Button Test 
-            </div>
-                        <br/>
-                
-                        <div class="food-sponsor">
-                            <a class="button" href="#popup1">
-                                <div class="inline-block">
-                                    <p>Delay</p>
-                                </div>
-                            </a>
+                </div>
+                <p></p>
+                <hr class="style">
+                    <br/>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <br>
+                            <br>
+                                <div class = "popUp"></div>
+                            </center>
+    
+    <script>
 
-                             <a class="button" href="#popup2">
-                                <div class="inline-block">
-                                    <p>Immediate</p>
-                                </div>
-                            </a>
+        document.body.onkeyup = function(pressed){
+        if(pressed.keyCode == 32){
+       
+        tempAlert();
+        }
 
+        if(pressed.keyCode==76){
+            tempAlertFast();
+        }
+        }
 
-                            <div id="popup1" class="overlay">
-                                <div class="popup">
-                                    <h2>Learn More</h2>
-                                    <a class="close" href="#">&times;</a>
-                                    <div class="content">Learn more about becoming a sponsor and our three levels of sponsorships by contacting an ASB Officer found 
-                                        <a href="contact.html">here</a>
-                                    </div>
-                                </div>
-                            </div>
+        alert("Help");
 
-                            <div id="popup2" class="overlay">
-                                <div class="popup">
-                                    <h2>[Sponsor Name Here]</h2>
-                                    <a class="close" href="#">&times;</a>
-                                    <div class="content">
-                                        <a href="#"><img src="images/placeholder.jpg" /></a>
-                                        <br />
-                                        <br />
-                                        [Sponsor Name] is a proud <em> Bainbridge Spartan </em> Sponsor for Hoopfest. [Sponsor Name] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod massa sed venenatis ultricies. Integer finibus scelerisque lorem et mollis.
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!--Navigation Panel-->
-                    </center>
-                <script>
-    $(document).ready(function(){
-      $(document).keydown(function(keyPressed) {
-   if (keyPressed.keyCode == 32)  {
-           window.open("index.html")
-  }})});
-
-</script>
-<script>
-$(document).ready(function(){
-var kkeys = [], code = "32";
-
-$(document).keydown(function(e) {
-
-  kkeys.push( e.keyCode );
-
-  if ( kkeys.toString().indexOf( code ) >= 0 ) {
-
-    $(document).unbind('keydown',arguments.callee);
-    window.open("http://hackertyper.net")
-  
-  }
-
-});
-});
- 
-</script>
-                </body>
-            </html>
+        
+    </script>
+                        </body>
+                    </html>

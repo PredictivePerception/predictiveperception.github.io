@@ -1,3 +1,5 @@
-# bainbridge-hoopfest
-Bainbridge Hoopfest test website
-Just playing around to get used to git and make a test website 
+# Predictive Percpetion
+Predictive Perception - Free will experiment
+For EFS Course at University of Washington - Biology of Consciousness
+By: Henry Brown
+For more information, eamil HenryBrown@gmail.com
