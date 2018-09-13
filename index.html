@@ -28,8 +28,8 @@
                 <hr class="style">
                     <br/>
                     <label class="switch">
-                        <input type="checkbox" checked>
-                            <span class="slider"></span>
+                        <input id="btn" type="checkbox">
+                            <span id="slider"></span>
                         </label>
                         <br>
                             <br>
@@ -38,16 +38,24 @@
     
     <script>
         document.body.onkeyup = function(pressed){
-
+            if(document.getElementById("btn").checked == true){
         setTimeout(function (){
         if(pressed.keyCode == 32){
-            tempAlertFast();
-        }},1000)
+                    console.log(document.getElementById('slider').style.backgroundColor);
 
-        if(pressed.keyCode == 76 ){
-        tempAlert();
+            tempAlertFast();
+        }},500)
         }
-        }   
+        else{
+        if(pressed.keyCode == 32 ){
+        tempAlert();
+        console.log(document.getElementById("btn").checked);
+       
+        }
+        }  
+}
+
+//toggle on--> delay , toggle off-->immediate
     </script>
                         </body>
                     </html>
