@@ -18,7 +18,6 @@
                                     <h2> Predictive Perception </h2>
                                     <h5>Biology of Human Consciouness Final Project</h5>
                                 </center>
-
                             </a>
                         </div>
                     </div>
@@ -36,10 +35,9 @@
                             <br>
                                 <div class = "popUp"></div>
                             </center>
-    
-    <script>
+        <script>
         document.body.onkeyup = function(pressed){
-            if(document.getElementById("btn").checked == true){
+            if(document.getElementById("btn").checked === true){
         setTimeout(function (){
         if(pressed.keyCode == 32){
                     console.log(document.getElementById('slider').style.backgroundColor);
@@ -51,13 +49,11 @@
         else{
         if(pressed.keyCode == 32 ){
         tempAlert();
-        console.log(document.getElementById("btn").checked);
-       
         }
         }  
 }
 
 //toggle on--> delay , toggle off-->immediate
     </script>
-                        </body>
-                    </html>
+                    </body>
+                </html>
