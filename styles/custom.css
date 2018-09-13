@@ -131,4 +131,21 @@ input:checked + #slider:before {
   width:20em;
   height: 20em;
   background-color:#BC002D;
+  z-index: 1;
+  
   }
+
+.go{
+  visibility: hidden;
+  border-radius: 80%;
+  margin-top:-30%;
+  width:20em;
+  height: 20em;
+  z-index:100;
+  background-color:#228B22;
+  }
+
+.go p{
+    font-size:4em;
+    line-height: 5em;
+}

@@ -32,25 +32,35 @@
                         <br>
                             <br>
                                 <div class = "popUp"></div>
+                                 <div class = "go"><p>GO</p></div>
                             </center>
         <script>
         document.body.onkeyup = function(pressed){
-            if(document.getElementById("btn").checked === true){
+
+           if(document.getElementById("btn").checked === true){
                 setTimeout(function (){
                 if(pressed.keyCode == 32){
-                    console.log(document.getElementById('slider').style.backgroundColor);
                     tempAlert();
+                   
                 }},125)
+            }
+        
+            else{
+                if(pressed.keyCode == 32 ){
+                tempAlert();
+            }
+         
+            }
         }
-
-        else{
-        if(pressed.keyCode == 32 ){
-        tempAlert();
-
-        }
-        }  
-}
-
+        
+        function autoRun() { 
+             setTimeout(function (){
+            goAlert();
+            }, Math.floor(Math.random()*30)*100+3000);
+        setTimeout('autoRun()',7000);
+    }
+        autoRun(); 
+    
 //toggle on--> delay , toggle off-->immediate
     </script>
                     </body>
