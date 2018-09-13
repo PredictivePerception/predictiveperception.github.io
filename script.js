@@ -9,6 +9,6 @@ function tempAlert(){
   var newStyles = document.createElement('style')
         document.head.append(newStyles);
         newStyles.innerHTML = ".popUp{visibility:visible}";
-	window.setTimeout("fade();", 50);
+	window.setTimeout("fade();", 200);
 }
 
