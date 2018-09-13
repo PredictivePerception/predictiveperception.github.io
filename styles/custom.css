@@ -128,7 +128,7 @@ input:checked + #slider:before {
 .popUp{
   visibility: hidden;
   border-radius: 50%;
-  width:15em;
-  height: 15em;
-  background-color:green;
+  width:20em;
+  height: 20em;
+  background-color:#BC002D;
   }
