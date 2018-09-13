@@ -128,7 +128,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
@@ -141,8 +140,8 @@ input:checked + .slider:before {
 .popUp{
   visibility: hidden;
   border-radius: 50%;
-  width: 15em;
+  width:15em;
   height: 15em;
   background-color:green;
+   }
 
-}

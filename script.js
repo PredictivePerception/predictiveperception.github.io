@@ -1,7 +1,7 @@
 function fade(){
  var newStyles = document.createElement('style')
         document.head.append(newStyles);
-        newStyles.innerHTML = ".popUp{visibility:hidden}";
+        newStyles.innerHTML = ".popUp{visibility:hidden;}";
 }
 
 function tempAlert(){
@@ -9,7 +9,7 @@ function tempAlert(){
   var newStyles = document.createElement('style')
         document.head.append(newStyles);
         newStyles.innerHTML = ".popUp{visibility:visible}";
-	window.setTimeout("fade();", 500);
+	window.setTimeout("fade();", 50);
 }
 
 
@@ -19,7 +19,7 @@ function tempAlertFast()
   var newStyles = document.createElement('style')
        document.head.append(newStyles);
        newStyles.innerHTML = ".popUp{visibility:visible}";
-
 	window.setTimeout("fade();", 50);
 }
+
 
