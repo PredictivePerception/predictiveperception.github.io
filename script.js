@@ -23,6 +23,6 @@ function goAlert(){
   var newStyles = document.createElement('style')
         document.head.append(newStyles);
         newStyles.innerHTML = ".go{visibility:visible;}";
-	window.setTimeout("fadeGo();", 300);
+	window.setTimeout("fadeGo();", 100);
 }
 
