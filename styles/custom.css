@@ -137,9 +137,10 @@ input:checked + #slider:before {
 
 .go{
   visibility: hidden;
-  margin-top:-25%;
-  width:25em;
-  height: 25em;
+  border-radius: 80%;
+  margin-top:-30%;
+  width:20em;
+  height: 20em;
   z-index:100;
   background-color:#228B22;
   }
