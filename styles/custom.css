@@ -137,7 +137,7 @@ input:checked + #slider:before {
 
 .go{
   visibility: hidden;
-  margin-top:-30%;
+  margin-top:-20%;
   width:30em;
   height: 30em;
   z-index:100;
