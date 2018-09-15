@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>Henry Brown</title>
+            <!--Line 4 refers to title of webpage-->
         <meta charset="utf-8">
             <link rel="icon" type="image/gif" href="images/favicon.png" sizes="16x16" />
+                <!--Line 7 adds favicon -- this is the brain image-->
             <link rel="stylesheet" href="styles/custom.css" />
             <script type="text/javascript" src="script.js"></script>
         </head>
@@ -41,6 +43,7 @@
                 if(pressed.keyCode == 32){
                     tempAlert();      
                 }},250)
+                    //line 43 adjusts delay
             }
             else{
                 if(pressed.keyCode == 32 ){
@@ -52,11 +55,12 @@
              setTimeout(function (){
             goAlert();
             }, Math.floor(Math.random()*30)*100+2000);
+                //line 55 controls the random value of Go where the 3rd number is the minimum value and the 1st and 2nd multiplied added to the 3rd is the max value. the 2nd number refers to it being a multiple of 100ms. 
         setTimeout('autoRun()',5000);
     }
         autoRun(); 
     
-//toggle on--> delay , toggle off-->immediate
+            //toggle on--> delay , toggle off-->immediate
     </script>
                     </body>
                 </html>
